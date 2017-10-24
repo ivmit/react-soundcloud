@@ -1,0 +1,42 @@
+{
+  "name": "react-soundcloud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --progress --colors --hot --config ./webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nony1992/react-soundcloud.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "es2015",
+      "react",
+      "stage-2"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/nony1992/react-soundcloud/issues"
+  },
+  "homepage": "https://github.com/nony1992/react-soundcloud#readme",
+  "dependencies": {
+    "npm": "^5.5.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "react-hot-loader": "^3.1.1",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.3"
+  }
+}
