@@ -1,10 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Stream from './components/Stream';
 
-const title = 'My Minimal React Webpack Babel Setup';
+const tracks = [
+  {
+    title: 'Some track'
+  },
+  {
+    title: 'Some other track 2'
+  },
+  {
+    title: 'Some other track 3'
+  }
+]
 
 ReactDOM.render(
-  <div>{title}</div>,
+  <Stream tracks={tracks} />,
   document.getElementById('app')
 );
 
