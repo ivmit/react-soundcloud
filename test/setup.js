@@ -14,7 +14,7 @@ global.window = document.defaultViews;
 
 Object.keys(document).forEach((key) => {
   if (!(key in global)) {
-    global[ key ] = document[ key ];
+    global[key] = document[key];
   }
 });
 
