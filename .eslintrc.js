@@ -6,5 +6,6 @@ module.exports = {
       ],
       "rules": {
         "mocha/no-exclusive-tests": "error",
+        "import/prefer-default-export": 0
       }
 };

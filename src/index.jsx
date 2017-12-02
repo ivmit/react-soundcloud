@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import configureStore from './stores/configureStore';
-import * as actions from './actions';
+import * as actionTypes from './actions/index';
 import Stream from './components/Stream';
 
 const tracks = [
@@ -20,7 +20,7 @@ const tracks = [
 ];
 
 const store = configureStore();
-store.dispatch(actions.setTracks(tracks));
+store.dispatch(actionTypes.setTracks(tracks));
 
 ReactDOM.render(
   <Stream tracks={tracks} />,
