@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 import configureStore from './stores/configureStore';
 import * as actionTypes from './actions/index';
 import Stream from './components/Stream';
@@ -23,7 +24,9 @@ const store = configureStore();
 store.dispatch(actionTypes.setTracks(tracks));
 
 ReactDOM.render(
-  <Stream tracks={tracks} />,
+  <Provider store={store}>
+    <Stream />
+  </Provider>,
   global.document.getElementById('app'),
 );
 

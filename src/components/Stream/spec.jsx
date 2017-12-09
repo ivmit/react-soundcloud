@@ -1,8 +1,8 @@
 import { shallow } from 'enzyme';
 import React from 'react';
 import { describe, it } from 'mocha';
-import { expect } from 'chai';
-import Stream from './Stream';
+import expect from 'chai';
+import Stream from './presenter';
 
 
 describe('Stream', () => {
